@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sosial Feed</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/index.html">Login</a>
+      <a href="/feed/index.html">Feed</a>
+      <a href="/profile/index.html"></a>
+    </nav>
+
+    <main>
+      <section>
+        <a href="/feed/index.html">
+          <h1>Feed</h1>
+        </a>
+        <section>
+          <article>
+            <img src="/vite-project/src/assets/" alt="test" />
+            <h2>test</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
+              temporibus dignissimos quidem veritatis eveniet placeat ex tempora
+              sit, consequatur modi, minima, quae neque consectetur ipsam soluta
+              nisi? Hic, dolorum nulla.
+            </p>
+          </article>
+
+          <article>
+            <img src="/vite-project/src/assets/" alt="test2" />
+            <h2>test2</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+              asperiores saepe fugiat modi porro debitis distinctio consequatur,
+              expedita incidunt quasi ut est in maxime doloribus quas odit
+              consequuntur non quis.
+            </p>
+          </article>
+          <article>
+            <img src="/vite-project/src/assets/" alt="test3" />
+            <h2>test3</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam,
+              nihil omnis pariatur optio fuga itaque fugiat quos tempore cumque
+              eaque dolore repellendus magni accusantium quo amet numquam
+              provident aspernatur vel.
+            </p>
+          </article>
+        </section>
+      </section>
+      <aside>
+        <form>
+          <h2>Search posts</h2>
+          <input type="search" placeholder="Search posts" />
+          <button type="submit">Search</button>
+        </form>
+        <form>
+          <h2>sort posts</h2>
+          <select name="sort">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="popular">Most popular</option>
+          </select>
+        </form>
+        <form>
+          <h2>Create post</h2>
+
+          <input type="text" placeholder="Title" required />
+          <textarea placeholder="Write your post" required></textarea>
+          <input type="text" placeholder="Tags,separated by comma" />
+          <input type="url" placeholder="image URL" />
+          <input type="text" placeholder="Image alt text" />
+
+          <button type="submit">Create post</button>
+        </form>
+      </aside>
+    </main>
+    <script type="module" src="/Src/main.js"></script>
+  </body>
+</html>

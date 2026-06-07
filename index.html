@@ -3,7 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Authentication</title>
   </head>
-  <body></body>
+
+  <body>
+    <nav>
+      <a href="/feed/">Feed</a>
+      <a href="/profile">My Profile</a>
+    </nav>
+
+    <main>
+      <section>
+        <h1>Login</h1>
+
+        <form action="/profile">
+          <input
+            id="loginEmail"
+            name="email"
+            type="email"
+            placeholder="email"
+            required
+          />
+
+          <input
+            id="loginPassword"
+            name="password"
+            type="password"
+            placeholder="password"
+            minlength="8"
+            required
+          />
+
+          <button type="submit">Login</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Register</h2>
+        <form action="/profile">
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Name"
+            required
+          />
+
+          <input
+            id="registerEmail"
+            name="email"
+            type="email"
+            placeholder="Email"
+            required
+          />
+
+          <input
+            id="registerPassword"
+            name="password"
+            type="password"
+            placeholder="password"
+            minlength="8"
+            required
+          />
+
+          <input
+            id="passwordConfirm"
+            name="passwordConfirm"
+            type="password"
+            placeholder="Confirm password"
+            minlength="8"
+            required
+          />
+
+          <button type="submit">Register</button>
+        </form>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
