@@ -6,84 +6,154 @@
     <title>Authentication</title>
   </head>
 
-  <body class="min-h-screen bg-red-500 text-app-text">
-    <main class="auth-page">
-      <div class="auth-container">
-        <header class="auth-hero">
-          <a href="/" class="auth-logo">SocialApp</a>
+  <body class="min-h-screen bg-slate-50 text-slate-950">
+    <main class="min-h-screen px-4 py-8">
+      <div class="mx-auto flex w-full max-w-6xl flex-col gap-8">
+        <header class="mx-auto max-w-2xl text-center">
+          <a
+            href="/"
+            class="mb-6 inline-flex min-h-11 items-center justify-center round-full border border-slate-300 bg-white px-5 text-sm font-bold tracking-wide text-slate-950 shadow-sm"
+            >SocialApp</a
+          >
 
-          <h1 class="auth-heading">Welcome back</h1>
+          <h1
+            class="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl"
+          >
+            Welcome back
+          </h1>
 
-          <p class="auth-lead">
+          <p class="mt-4 text-base leading-7 text-slate-600">
             Sign in to continue, or create an account to join the community.
           </p>
         </header>
 
-        <div class="auth-grid">
-          <section class="auth-card">
-            <h2 class="auth-card-title">Login</h2>
+        <div class="grid gap-6 md:grid-cols-2">
+          <section
+            class="rounded-3xl border border-slate-300 bg-white p-6 shadow-lg"
+          >
+            <h2 class="mb-6 text-2xl font-bold tracking-tight text-slate-950">
+              Login
+            </h2>
 
-            <form action="/profile/">
-              <input
-                id="loginEmail"
-                name="email"
-                type="email"
-                placeholder="email"
-                required
-              />
-
-              <input
-                id="loginPassword"
-                name="password"
-                type="password"
-                placeholder="password"
-                minlength="8"
-                required
-              />
-
-              <button type="submit">Login</button>
+            <form action="/profile/" class="grid gap-4">
+              <div class="grid gap2">
+                <label
+                  for="loginEmail"
+                  class="text-sm font-medium text-slate-700"
+                  >Email
+                </label>
+                <input
+                  id="loginEmail"
+                  name="Email"
+                  type="email"
+                  placeholder="email@example.com"
+                  required
+                  class="min-h-11 rounded-xl border border-slate-300 bg-white px-4 text-slate-950 outline-none transition focus:border-blue-900 focus:ring-2 focus:ring-blue-900/20"
+                />
+              </div>
+              <div class="grid gap-2">
+                <label
+                  for="loginPassword"
+                  class="text-sm font-medium text-slate-700"
+                >
+                  password
+                </label>
+                <input
+                  id="loginPassword"
+                  name="password"
+                  type="password"
+                  placeholder="Minimum 8 characters"
+                  required
+                  class="min-h-11 rounded-xl border border-slate-300 bg-white px-4 text-slate-950 outline-none transition focus:border-blue-900 focus:ring-2 focus:ring-blue-900/20"
+                />
+              </div>
+              <button
+                type="submit"
+                class="mt-2 min-h-11 rounded-xl bg-blue-800 px-5 text-sm font-bold text-white transition hover:bg-ble-900 focus:outline-none focus:ring-2 foucs_ring-blue-900 foucs:ring-offset-2"
+              >
+                Login
+              </button>
             </form>
           </section>
+          <section
+            class="rounded-3xl border border-slate-300 bg-white p-6 shadowlg"
+          >
+            <h2 class="mb-6 text-2xl font-bold tracking-tight text-slate-950">
+              Register
+            </h2>
+            <form action="/profile/index.html" class="gtid gap-4">
+              <div class="grid gap-2">
+                <label for="name" class="text-sm font-medium text-slate-700">
+                  Name
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Your name"
+                  required
+                  class="min-h-11 rounded-xl border border-slate-300 bg-white px-4 text-slate-950 outline-none transition focus:border-blue-900 focus:ring-2 focus:ring-blue-900/20"
+                />
+              </div>
+              <div class="grid gap-2">
+                <label
+                  for="registerEmail"
+                  class="text-sm font-medium text-slate-700"
+                >
+                  Email
+                </label>
+                <input
+                  id="registerEmail"
+                  name="email"
+                  type="email"
+                  placeholder="email@example.com"
+                  required
+                  class="min-h-11 rounded-xl border border-slate-300 bg-white px-4 text-slate-950 outline-none transition focus:border-blue-900 focus:ring-2 focus:ring-blue-900/20"
+                />
+              </div>
 
-          <section class="auth-card">
-            <h2 class="auth-card-title">Register</h2>
+              <div class="grid gap-2">
+                <label
+                  for="registerPassword"
+                  class="text-sm font-medium text-slate-700"
+                >
+                  Password
+                </label>
+                <input
+                  id="registerPassword"
+                  name="password"
+                  type="password"
+                  placeholder="Minimum 8 characters"
+                  minlength="8"
+                  required
+                  class="min-h-11 rounded-xl border border-slate-300 bg-white px-4 text-slate-950 outline-none transition focus:border-blue-900 focus:ring-2 focus:ring-blue-900/20"
+                />
+              </div>
 
-            <form action="/profile/">
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Name"
-                required
-              />
+              <div class="grid gap-2">
+                <label
+                  for="passwordConfirm"
+                  class="text-sm font-medium text-slate-700"
+                >
+                  Confirm password
+                </label>
+                <input
+                  id="passwordConfirm"
+                  name="passwordConfirm"
+                  type="password"
+                  placeholder="Repeat password"
+                  minlength="8"
+                  required
+                  class="min-h-11 rounded-xl border border-slate-300 bg-white px-4 text-slate-950 outline-none transition focus:border-blue-900 focus:ring-2 focus:ring-blue-900/20"
+                />
+              </div>
 
-              <input
-                id="registerEmail"
-                name="email"
-                type="email"
-                placeholder="Email"
-                required
-              />
-
-              <input
-                id="registerPassword"
-                name="password"
-                type="password"
-                placeholder="password"
-                minlength="8"
-                required
-              />
-
-              <input
-                id="passwordConfirm"
-                name="passwordConfirm"
-                type="password"
-                placeholder="Confirm password"
-                minlength="8"
-                required
-              />
-
-              <button type="submit">Register</button>
+              <button
+                type="submit"
+                class="mt-2 min-h-11 rounded-xl bg-blue-800 px-5 text-sm font-bold text-white transition hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2"
+              >
+                Register
+              </button>
             </form>
           </section>
         </div>

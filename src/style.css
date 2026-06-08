@@ -1,11 +1,6 @@
 @import "tailwindcss";
 
-@import "./components/layout.css";
-@import "./components/card.css";
-@import "./components/forms.css";
-@import "./components/buttons.css";
-
-/*@theme {
+:root {
   --color-app-bg: #f8fafc;
   --color-app-surface: #ffffff;
   --color-app-text: #020617;
@@ -14,10 +9,34 @@
   --color-app-primary: #1e40af;
   --color-app-primary-hover: #1e3a8a;
   --color-app-focus: #172554;
-} 
+}
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply min-h-screen bg-app-bg text-app-text;
+    min-height: 100vh;
+    background-color: var(--color-app-bg);
+    color: var(--color-app-text);
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    font: inherit;
   }
 }
