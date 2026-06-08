@@ -6,57 +6,172 @@
     <title>Profile</title>
   </head>
 
-  <body>
-    <nav>
-      <a href="/index.html">Login</a>
-      <a href="/feed/index.html">Feed</a>
-      <a href="/profile/index.html">Profile</a>
+  <body class="min-h-screen bg-slate-50 text-slate-950">
+    <nav class="border-b border-slate-200 bg-white">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4"
+      >
+        <a href="/profile/index.html" class="text-lg font-bold text-slate-950">
+          SocialApp
+        </a>
+
+        <div class="flex items-center gap-4 text-sm font-medium">
+          <a
+            href="/index.html"
+            class="text-slate-600 transition hover:text-slate-950"
+          >
+            Login
+          </a>
+
+          <a
+            href="/feed/index.html"
+            class="text-slate-600 transition hover:text-slate-950"
+          >
+            Feed
+          </a>
+
+          <a
+            href="/profile/index.html"
+            class="text-blue-800 transition hover:text-blue-900"
+          >
+            Profile
+          </a>
+        </div>
+      </div>
     </nav>
 
-    <main>
-      <section>
-        <img src="/images/profile.jpg" alt="Profile image of Steffen" />
+    <main class="mx-auto grid max-w-6xl gap-8 px-4 py-8">
+      <section
+        class="overflow-hidden rounded-3xl border border-slate-300 bg-white shadow-lg"
+      >
+        <div class="h-32 bg-gradient-to-r from-blue-800 to-slate-900"></div>
 
-        <h1>Steffen</h1>
-        <p>Frontend student building social media apps with Tailwind CSS.</p>
+        <div class="grid gap-6 p-6 sm:grid-cols-[auto_1fr] sm:items-end">
+          <img
+            src="/src/assets/Snapchat-2058076553.jpg"
+            alt="Profile image of Steffen"
+            class="-mt-20 h-32 w-32 rounded-full border-4 border-white object-cover shadow-lg"
+          />
 
-        <button type="button">Follow</button>
+          <div class="grid gap-4">
+            <div>
+              <h1 class="text-3xl font-bold tracking-tight text-slate-950">
+                Steffen
+              </h1>
 
-        <div>
-          <p><strong>128</strong> Followers</p>
-          <p><strong>84</strong> Following</p>
+              <p class="mt-2 max-w-2xl leading-7 text-slate-600">
+                Frontend student building social media apps with Tailwind CSS.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap gap-3">
+              <button
+                type="button"
+                class="min-h-11 rounded-xl bg-blue-800 px-6 text-sm font-bold text-white transition hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2"
+              >
+                Follow
+              </button>
+
+              <a
+                href="/feed/index.html"
+                class="inline-flex min-h-11 items-center justify-center rounded-xl border border-slate-300 bg-white px-6 text-sm font-bold text-slate-950 transition hover:bg-slate-100"
+              >
+                View feed
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid border-t border-slate-200 sm:grid-cols-2">
+          <div class="p-6">
+            <p class="text-3xl font-bold text-slate-950">128</p>
+            <p class="mt-1 text-sm font-medium text-slate-600">Followers</p>
+          </div>
+
+          <div class="border-t border-slate-200 p-6 sm:border-l sm:border-t-0">
+            <p class="text-3xl font-bold text-slate-950">84</p>
+            <p class="mt-1 text-sm font-medium text-slate-600">Following</p>
+          </div>
         </div>
       </section>
 
       <section>
-        <h2>User posts</h2>
-
-        <article>
-          <img src="/images/post-1.jpg" alt="Desk setup with laptop" />
-          <h3>Working on my CSS Frameworks project</h3>
-          <p>
-            I am rebuilding parts of my old JS2 social media project as a static
-            Tailwind CSS app.
+        <div class="mb-6">
+          <p
+            class="text-sm font-semibold uppercase tracking-wide text-blue-800"
+          >
+            Profile activity
           </p>
-        </article>
 
-        <article>
-          <img src="/images/post-2.jpg" alt="Code editor on screen" />
-          <h3>Practicing semantic HTML</h3>
-          <p>
-            Today I worked with section, article, aside and form elements to
-            improve the structure of my pages.
-          </p>
-        </article>
+          <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-950">
+            User posts
+          </h2>
+        </div>
 
-        <article>
-          <img src="/images/post-3.jpg" alt="Mobile layout sketch" />
-          <h3>Planning responsive layouts</h3>
-          <p>
-            The next step is styling the authentication, feed and profile pages
-            with Tailwind utilities.
-          </p>
-        </article>
+        <div class="grid gap-6 md:grid-cols-3">
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-300 bg-white shadow-lg"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=80"
+              alt="Desk setup with laptop"
+              class="h-48 w-full object-cover"
+            />
+
+            <div class="grid gap-3 p-6">
+              <h3 class="text-xl font-bold tracking-tight text-slate-950">
+                Working on my CSS Frameworks project
+              </h3>
+
+              <p class="leading-7 text-slate-600">
+                I am rebuilding parts of my old JS2 social media project as a
+                static Tailwind CSS app.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-300 bg-white shadow-lg"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=700&q=80"
+              alt="Code editor on screen"
+              class="h-48 w-full object-cover"
+            />
+
+            <div class="grid gap-3 p-6">
+              <h3 class="text-xl font-bold tracking-tight text-slate-950">
+                Practicing semantic HTML
+              </h3>
+
+              <p class="leading-7 text-slate-600">
+                Today I worked with section, article, aside and form elements to
+                improve the structure of my pages.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-300 bg-white shadow-lg"
+          >
+            <img
+              src="/src/assets/Snapchat-2058076553.jpg"
+              alt="Mobile layout sketch"
+              class="h-48 w-full object-cover"
+            />
+
+            <div class="grid gap-3 p-6">
+              <h3 class="text-xl font-bold tracking-tight text-slate-950">
+                Planning responsive layouts
+              </h3>
+
+              <p class="leading-7 text-slate-600">
+                The next step is styling the authentication, feed and profile
+                pages with Tailwind utilities.
+              </p>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
