@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@import "./components/layout.css";
+@import "./components/card.css";
+@import "./components/forms.css";
+@import "./components/buttons.css";
+
+/*@theme {
+  --color-app-bg: #f8fafc;
+  --color-app-surface: #ffffff;
+  --color-app-text: #020617;
+  --color-app-muted: #334155;
+  --color-app-border: #cbd5e1;
+  --color-app-primary: #1e40af;
+  --color-app-primary-hover: #1e3a8a;
+  --color-app-focus: #172554;
+} 
+
+@layer base {
+  body {
+    @apply min-h-screen bg-app-bg text-app-text;
+  }
+}

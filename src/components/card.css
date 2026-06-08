@@ -1,0 +1,9 @@
+@layer components {
+  .auth-card {
+    @apply rounded-3x1 border border-app-border bg-app-surface p-6 shadow-lg;
+  }
+
+  .auth-card-title {
+    @apply mb-6 text-2x1 font-bold tracking-tight text-app-text;
+  }
+}

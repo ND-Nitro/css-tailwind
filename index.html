@@ -6,79 +6,90 @@
     <title>Authentication</title>
   </head>
 
-  <body>
-    <nav>
-      <a href="/feed/">Feed</a>
-      <a href="/profile">My Profile</a>
-    </nav>
+  <body class="min-h-screen bg-red-500 text-app-text">
+    <main class="auth-page">
+      <div class="auth-container">
+        <header class="auth-hero">
+          <a href="/" class="auth-logo">SocialApp</a>
 
-    <main>
-      <section>
-        <h1>Login</h1>
+          <h1 class="auth-heading">Welcome back</h1>
 
-        <form action="/profile">
-          <input
-            id="loginEmail"
-            name="email"
-            type="email"
-            placeholder="email"
-            required
-          />
+          <p class="auth-lead">
+            Sign in to continue, or create an account to join the community.
+          </p>
+        </header>
 
-          <input
-            id="loginPassword"
-            name="password"
-            type="password"
-            placeholder="password"
-            minlength="8"
-            required
-          />
+        <div class="auth-grid">
+          <section class="auth-card">
+            <h2 class="auth-card-title">Login</h2>
 
-          <button type="submit">Login</button>
-        </form>
-      </section>
+            <form action="/profile/">
+              <input
+                id="loginEmail"
+                name="email"
+                type="email"
+                placeholder="email"
+                required
+              />
 
-      <section>
-        <h2>Register</h2>
-        <form action="/profile">
-          <input
-            id="name"
-            name="name"
-            type="text"
-            placeholder="Name"
-            required
-          />
+              <input
+                id="loginPassword"
+                name="password"
+                type="password"
+                placeholder="password"
+                minlength="8"
+                required
+              />
 
-          <input
-            id="registerEmail"
-            name="email"
-            type="email"
-            placeholder="Email"
-            required
-          />
+              <button type="submit">Login</button>
+            </form>
+          </section>
 
-          <input
-            id="registerPassword"
-            name="password"
-            type="password"
-            placeholder="password"
-            minlength="8"
-            required
-          />
+          <section class="auth-card">
+            <h2 class="auth-card-title">Register</h2>
 
-          <input
-            id="passwordConfirm"
-            name="passwordConfirm"
-            type="password"
-            placeholder="Confirm password"
-            minlength="8"
-            required
-          />
+            <form action="/profile/">
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Name"
+                required
+              />
 
-          <button type="submit">Register</button>
-        </form>
-      </section>
+              <input
+                id="registerEmail"
+                name="email"
+                type="email"
+                placeholder="Email"
+                required
+              />
+
+              <input
+                id="registerPassword"
+                name="password"
+                type="password"
+                placeholder="password"
+                minlength="8"
+                required
+              />
+
+              <input
+                id="passwordConfirm"
+                name="passwordConfirm"
+                type="password"
+                placeholder="Confirm password"
+                minlength="8"
+                required
+              />
+
+              <button type="submit">Register</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
