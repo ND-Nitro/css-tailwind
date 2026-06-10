@@ -11,8 +11,8 @@
       <div class="mx-auto flex w-full max-w-6xl flex-col gap-8">
         <header class="mx-auto max-w-2xl text-center">
           <a
-            href="/"
-            class="mb-6 inline-flex min-h-11 items-center justify-center round-full border border-slate-300 bg-white px-5 text-sm font-bold tracking-wide text-slate-950 shadow-sm"
+            href="/css-tailwind/index.html"
+            class="mb-6 inline-flex min-h-11 items-center justify-center rounded-full border border-slate-300 bg-white px-5 text-sm font-bold tracking-wide text-slate-950 shadow-sm"
             >SocialApp</a
           >
 
@@ -35,8 +35,8 @@
               Login
             </h2>
 
-            <form action="/profile/" class="grid gap-4">
-              <div class="grid gap2">
+            <form action="/css-tailwind/profile/" class="grid gap-4">
+              <div class="grid gap-2">
                 <label
                   for="loginEmail"
                   class="text-sm font-medium text-slate-700"
@@ -63,25 +63,26 @@
                   name="password"
                   type="password"
                   placeholder="Minimum 8 characters"
+                  minlenght="8"
                   required
                   class="min-h-11 rounded-xl border border-slate-300 bg-white px-4 text-slate-950 outline-none transition focus:border-blue-900 focus:ring-2 focus:ring-blue-900/20"
                 />
               </div>
               <button
                 type="submit"
-                class="mt-2 min-h-11 rounded-xl bg-blue-800 px-5 text-sm font-bold text-white transition hover:bg-ble-900 focus:outline-none focus:ring-2 foucs_ring-blue-900 foucs:ring-offset-2"
+                class="mt-2 min-h-11 rounded-xl bg-blue-800 px-5 text-sm font-bold text-white transition hover:bg-blue-900 focus:outline-none focus:ring-2 foucs_ring-blue-900 foucs:ring-offset-2"
               >
                 Login
               </button>
             </form>
           </section>
           <section
-            class="rounded-3xl border border-slate-300 bg-white p-6 shadowlg"
+            class="rounded-3xl border border-slate-300 bg-white p-6 shadow-lg"
           >
             <h2 class="mb-6 text-2xl font-bold tracking-tight text-slate-950">
               Register
             </h2>
-            <form action="/profile/index.html" class="gtid gap-4">
+            <form action="/css-tailwind/profile/" class="grid gap-4">
               <div class="grid gap-2">
                 <label for="name" class="text-sm font-medium text-slate-700">
                   Name
@@ -160,6 +161,6 @@
       </div>
     </main>
 
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
