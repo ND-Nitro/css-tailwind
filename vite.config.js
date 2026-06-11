@@ -11,6 +11,7 @@ export default defineConfig({
         main: resolve(process.cwd(), "index.html"),
         feed: resolve(process.cwd(), "feed/index.html"),
         profile: resolve(process.cwd(), "profile/index.html"),
+        about: resolve(process.cwd(), "about/index.html"),
       },
     },
   },
