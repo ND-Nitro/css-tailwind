@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Profile page for a frontend student showcasing posts, skills and project activity."
+    />
+    <title>Profile | SocialApp</title>
+  </head>
+
+  <body class="min-h-screen bg-slate-50 text-slate-950">
+    <nav class="border-b border-slate-200 bg-white">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4"
+      >
+        <a
+          href="/css-tailwind/about/index.html"
+          class="text-lg font-bold text-slate-950"
+        >
+          SocialApp
+        </a>
+
+        <div class="flex items-center gap-4 text-sm font-medium">
+          <a
+            href="/css-tailwind/index.html"
+            class="text-slate-600 transition hover:text-slate-950"
+          >
+            Login
+          </a>
+
+          <a
+            href="/css-tailwind/feed/"
+            class="text-slate-600 transition hover:text-slate-950"
+          >
+            Feed
+          </a>
+
+          <a
+            href="/css-tailwind/profile/"
+            class="text-blue-800 transition hover:text-blue-900"
+          >
+            Profile
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="mx-auto grid max-w-6xl gap-8 px-4 py-8">
+      <section
+        class="rounded-3xl border border-slate-300 bg-white p-6 shadow-lg"
+      >
+        <div class="grid gap-6 lg:grid-cols-[1fr_320px] lg:items-center">
+          <div class="flex flex-col gap-5 sm:flex-row sm:items-center">
+            <img
+              src="/src/assets/Snapchat-2058076553.jpg"
+              alt="Profile image of Steffen"
+              class="-mt-20 h-36 w-36 rounded-3xl object-cover shadow-lg"
+            />
+
+            <div>
+              <p
+                class="text-sm font-semibold uppercase tracking-wide text-blue-800"
+              >
+                Frontend student
+              </p>
+
+              <h1 class="mt-1 text-3xl font-bold tracking-tight text-slate-950">
+                Steffen
+              </h1>
+
+              <p class="mt-3 max-w-2xl leading-7 text-slate-600">
+                Frontend student passionate about coding, technology and
+                building creative web experiences. This project shows my
+                progress with layout, responsive design and modern front-end
+                tools.
+              </p>
+
+              <div class="mt-5 flex flex-wrap gap-3">
+                <button
+                  type="button"
+                  class="min-h-11 rounded-xl bg-blue-800 px-6 text-sm font-bold text-white transition hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2"
+                >
+                  Follow
+                </button>
+
+                <a
+                  href="/css-tailwind/feed/"
+                  class="inline-flex min-h-11 items-center justify-center rounded-xl border border-slate-300 bg-white px-6 text-sm font-bold text-slate-950 transition hover:bg-slate-100"
+                >
+                  View feed
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <aside class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+            <h2
+              class="text-sm font-bold uppercase tracking-wide text-slate-700"
+            >
+              Current stack
+            </h2>
+
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span
+                class="rounded-full bg-white px-3 py-1 text-sm font-semibold text-slate-700 shadow-sm"
+              >
+                HTML
+              </span>
+              <span
+                class="rounded-full bg-white px-3 py-1 text-sm font-semibold text-slate-700 shadow-sm"
+              >
+                CSS
+              </span>
+              <span
+                class="rounded-full bg-white px-3 py-1 text-sm font-semibold text-slate-700 shadow-sm"
+              >
+                JavaScript
+              </span>
+              <span
+                class="rounded-full bg-white px-3 py-1 text-sm font-semibold text-slate-700 shadow-sm"
+              >
+                Tailwind CSS
+              </span>
+              <span
+                class="rounded-full bg-white px-3 py-1 text-sm font-semibold text-slate-700 shadow-sm"
+              >
+                Bootstrap
+              </span>
+              <span
+                class="rounded-full bg-white px-3 py-1 text-sm font-semibold text-slate-700 shadow-sm"
+              >
+                Sass
+              </span>
+              <span
+                class="rounded-full bg-white px-3 py-1 text-sm font-semibold text-slate-700 shadow-sm"
+              >
+                Vite
+              </span>
+            </div>
+
+            <div
+              class="mt-5 grid grid-cols-2 gap-3 border-t border-slate-200 pt-5"
+            >
+              <div>
+                <p class="text-2xl font-bold text-slate-950">1579</p>
+                <p class="text-sm text-slate-600">Followers</p>
+              </div>
+
+              <div>
+                <p class="text-2xl font-bold text-slate-950">250</p>
+                <p class="text-sm text-slate-600">Following</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section>
+        <div class="mb-6">
+          <p
+            class="text-sm font-semibold uppercase tracking-wide text-blue-800"
+          >
+            Profile activity
+          </p>
+
+          <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-950">
+            User posts
+          </h2>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-300 bg-white shadow-lg"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=80"
+              alt="Desk setup with laptop"
+              class="h-48 w-full object-cover"
+            />
+
+            <div class="grid gap-3 p-6">
+              <p class="text-sm font-semibold text-blue-800">Project Update</p>
+
+              <h3 class="text-xl font-bold tracking-tight text-slate-950">
+                Building a Static Social Media Layout
+              </h3>
+
+              <p class="leading-7 text-slate-600">
+                This post shares progress from turning a previous social media
+                app idea into a clean static layout with authentication, feed
+                content and profile sections.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-300 bg-white shadow-lg"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=700&q=80"
+              alt="Code editor on screen"
+              class="h-48 w-full object-cover"
+            />
+
+            <div class="grid gap-3 p-6">
+              <p class="text-sm font-semibold text-blue-800">Design Practice</p>
+
+              <h3 class="text-xl font-bold tracking-tight text-slate-950">
+                Improving the User Interface
+              </h3>
+
+              <p class="leading-7 text-slate-600">
+                I am experimenting with spacing, cards, images and responsive
+                layouts to make the page feel more polished and easier to use
+                across different screen sizes.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-3xl border border-slate-300 bg-white shadow-lg"
+          >
+            <img
+              src="/src/assets/kristin-jarvis-sLWmwBN0pTg-unsplash.jpg"
+              alt="People discussing design ideas near a laptop"
+              class="h-48 w-full object-cover"
+            />
+
+            <div class="grid gap-3 p-6">
+              <p class="text-sm font-semibold text-blue-800">Collaboration</p>
+
+              <h3 class="text-xl font-bold tracking-tight text-slate-950">
+                Learning Through Feedback
+              </h3>
+
+              <p class="leading-7 text-slate-600">
+                Feedback from classmates and users helps me notice details I
+                might miss and make better choices in layout, accessibility and
+                responsive design.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
