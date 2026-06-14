@@ -1,5 +1,7 @@
-import { test, expect } from "@playwright/test";
+import { describe, it, expect } from "vitest";
 
-test("basic test works", async () => {
-  expect(true).toBe(true);
+describe("example", () => {
+  it("works", () => {
+    expect(true).toBe(true);
+  });
 });
